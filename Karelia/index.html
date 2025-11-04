@@ -5,8 +5,11 @@
         <meta charset="uft-8">
     </head>
     <body>
-        <header></header>
         <header>
+            <a href="#home">Главная</a>
+            <a href="#program">Программа</a>
+        </header>
+        <header id="home">
             <h1 align="center">Авторские туры в Карелию</h1>
             <figure>
                 <img src="resources\vid.jpg" alt="lake view in Karelia" width="795" height="502">
@@ -18,7 +21,7 @@
                 Нас отличает оригинальность программ, безупречная организация и индивидуальное внимание к каждому.</p>
         </header>
         <main>
-            <section>
+            <section id="program">
                 <h2>Почему выбирают нас?</h2>
                 <figure>
                     <img src="resources/para.jpg" alt="happy couple vacationing on tour" width="795" height="502">
@@ -50,88 +53,93 @@
                     <li>Для самостоятельного отдыха</li>
                 </ul>
             </section>
-            <h2>Наши тарифы</h2>
-            <p>Мы знаем, что каждое путешествие уникально.
-                Поэтому разработали несколько тарифов, чтобы вы могли выбрать самый комфортный для себя.
-                Независимо от выбранного тарифа, вас ждет незабываемое путешествие.
-            </p>
-            <table width="500">
-                <tr>
-                    <th width="200">Тарифы</th>
-                    <th width="300">Группа</th>
-                    <th width="300">Стоимость</th>
-                    <th width="300">Программа</th>
-                <tr>
-                    <td width="200">Эконом</td>
-                    <td width="300">До 15 человек</td>
-                    <td width="300">3000 руб.</td>
-                    <td width="300">Пешая прогулка по лесам Карелии</td>
-                </tr>
-                <tr>
-                    <td width="200">Комфорт</td>
-                    <td width="300">До 7 человек</td>
-                    <td width="300">5000 руб.</td>
-                    <td width="300">Пешая прогулка по лесам Карелии. Экскурсия по Ладожскому озеру</td>
-                </tr>
-                <tr>
-                    <td width="200">Премиум</td>
-                    <td width="300">До 4 человек</td>
-                    <td width="300">8000 руб.</td>
-                    <td width="300">Поездка по лесам Карелии с заездом в Сортовалу. Экскурсия по Ладожскому озеру</td>
-                </tr>
-                <tr>
-                    <td width="200">Бизнес</td>
-                    <td width="300">Персональный</td>
-                    <td width="300">20000 руб.</td>
-                    <td width="300">Индивидуальный план</td>
-                </tr>
-            </table>
-            <h3>Цены на дополнительные услуги:</h3>
-            <form>
-                <ul>
-                    <li>
-                        <input type="checkbox" name="services" value="transfer" data-price="200">
-                        <label>Трансфер до начала экскурсии</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="services" value="disabled_transfer" data-price="200">
-                        <label>Трансфер для маломобильных</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="services" value="translator" data-price="300">
-                        <label>Переводчик с русского на английский</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="services" value="children" data-price="200">
-                        <label>Экскурсия с детьми</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="services" value="hb" data-price="500">
-                        <label>День рождения</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="services" value="sign_l_i" data-price="300">
-                        <label>Сурдопереводчик</label>
-                    </li>
-                </ul>
-            </form>
-            <p2 id="total-price">Сумма: 0 рублей</p2>
-                <script>
-                    const checkboxes = document.querySelectorAll('input[name="services"]');
-                    const totalPriceElement = document.getElementById('total-price');
-                
-                    checkboxes.forEach(checkbox => {
-                    checkbox.addEventListener('change', () => {
-                        let totalPrice = 0;
+            <section class="container tarif" id="prices">
+                <h2>Наши тарифы</h2>
+                <p>Мы знаем, что каждое путешествие уникально.
+                    Поэтому разработали несколько тарифов, чтобы вы могли выбрать самый комфортный для себя.
+                    Независимо от выбранного тарифа, вас ждет незабываемое путешествие.
+                </p>
+                <table width="500">
+                    <tr>
+                        <th width="200">Тарифы</th>
+                        <th width="300">Группа</th>
+                        <th width="300">Стоимость</th>
+                        <th width="300">Программа</th>
+                    <tr>
+                        <td width="200">Эконом</td>
+                        <td width="300">До 15 человек</td>
+                        <td width="300">3000 руб.</td>
+                        <td width="300">Пешая прогулка по лесам Карелии</td>
+                    </tr>
+                    <tr>
+                        <td width="200">Комфорт</td>
+                        <td width="300">До 7 человек</td>
+                        <td width="300">5000 руб.</td>
+                        <td width="300">Пешая прогулка по лесам Карелии. Экскурсия по Ладожскому озеру</td>
+                    </tr>
+                    <tr>
+                        <td width="200">Премиум</td>
+                        <td width="300">До 4 человек</td>
+                        <td width="300">8000 руб.</td>
+                        <td width="300">Поездка по лесам Карелии с заездом в Сортовалу. Экскурсия по Ладожскому озеру</td>
+                    </tr>
+                    <tr>
+                        <td width="200">Бизнес</td>
+                        <td width="300">Персональный</td>
+                        <td width="300">20000 руб.</td>
+                        <td width="300">Индивидуальный план</td>
+                    </tr>
+                </table>
+            </section>
+            
+            <div class="dop">
+                <h3>Цены на дополнительные услуги:</h3>
+                <form>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="services" value="transfer" data-price="200">
+                            <label>Трансфер до начала экскурсии</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="services" value="disabled_transfer" data-price="200">
+                            <label>Трансфер для маломобильных</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="services" value="translator" data-price="300">
+                            <label>Переводчик с русского на английский</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="services" value="children" data-price="200">
+                            <label>Экскурсия с детьми</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="services" value="hb" data-price="500">
+                            <label>День рождения</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="services" value="sign_l_i" data-price="300">
+                            <label>Сурдопереводчик</label>
+                        </li>
+                    </ul>
+                </form>
+                <p2 id="total-price">Сумма: 0 рублей</p2>
+                    <script>
+                        const checkboxes = document.querySelectorAll('input[name="services"]');
+                        const totalPriceElement = document.getElementById('total-price');
+                    
                         checkboxes.forEach(checkbox => {
-                        if (checkbox.checked) {
-                            totalPrice += parseInt(checkbox.getAttribute('data-price'));
-                        }
+                        checkbox.addEventListener('change', () => {
+                            let totalPrice = 0;
+                            checkboxes.forEach(checkbox => {
+                            if (checkbox.checked) {
+                                totalPrice += parseInt(checkbox.getAttribute('data-price'));
+                            }
+                            });
+                            totalPriceElement.textContent = `Сумма: ${totalPrice} рублей`;
                         });
-                        totalPriceElement.textContent = `Сумма: ${totalPrice} рублей`;
-                    });
-                    });
-                </script>
+                        });
+                    </script>
+            </div>
             <h3 >Отзывы клиентов</h3>
             <blockquote>Если вы хотите не просто посмотреть на Карелию из окна автобуса, а почувствовать её душу — вам точно к этим ребятам!
                 Мы были в восторге от каждой детали. Нас не просто возили по точкам на карте, а буквально открывали нам этот удивительный край.
@@ -177,6 +185,13 @@
                 <br>
                 <button type="submit">Отправить</button>
             </form>
+            <aside>
+                <h2>Другие туры</h2>
+                <img src="resources/poezd.jpg" alt="The train rides beautifully" width="795" height="502">
+                <p>Ретро-поезд</p>
+                <img src="resources/lodka.jpg" alt="The ship is sailing away" width="795" height="502">
+                <p>Водный тур</p>
+            </aside>
         </main>
         <a href="https:/t.me/umvbz">Связь с автором</a>
     </body>
