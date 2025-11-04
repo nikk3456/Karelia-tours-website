@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Туры в Карелию</title>
+        <meta charset="uft-8">
+    </head>
+    <body>
+        <header></header>
+        <header>
+            <h1 align="center">Авторские туры в Карелию</h1>
+            <figure>
+                <img src="resources\vid.jpg" alt="lake view in Karelia" width="795" height="502">
+                <figcaption>Путешествие вокруг самого большого озера Европы</figcaption>
+            </figure>
+            <p>Откройте для себя настоящую Карелию с теми, кто знает и любит её.
+                Мы — команда увлеченных гидов, разрабатывающих авторские маршруты по самым удивительным уголкам Ленинградской области и Карелии.
+                Мы делимся не только красотами, но и легендами Севера.
+                Нас отличает оригинальность программ, безупречная организация и индивидуальное внимание к каждому.</p>
+        </header>
+        <main>
+            <section>
+                <h2>Почему выбирают нас?</h2>
+                <figure>
+                    <img src="resources/para.jpg" alt="happy couple vacationing on tour" width="795" height="502">
+                    <figcaption>Пятидневное погружение в природу Северного Приладожья</figcaption>
+                </figure>
+                <p>Мы не заполняем программу достопримечательностями. Мы открываем для вас душу Севера.
+                    За каждым нашим маршрутом стоит четкая цель:</p>
+                <ol>
+                    <li>Пробудить восторг от мощи нетронутой природы.</li>
+                    <li>Рассказать живую историю, которую можно почувствовать.</li>
+                    <li>Подарить ощущение настоящего гостеприимства, с которым так сложно расставаться.</li>
+                </ol>
+                <figure>
+                    <img src="resources/druzya.jpg" alt="friends on a forest tour in Karelia" width="795" height="502">
+                    <figcaption>Отправляемся путешествовать по водной глади Ладоги</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Кому подойдет экскурсия?</h2>
+                <figure>
+                    <img src="/resources/kid.jpg" alt="a child on a winter walk" width="795" height="502">
+                    <figcaption>Подходит даже для самых маленьких</figcaption>
+                </figure>
+                <ul>
+                    <li>Для пар</li>
+                    <li>Для всей семьи</li>
+                    <li>Для отдыха с друзьями</li>
+                    <li>Для самостоятельного отдыха</li>
+                </ul>
+            </section>
+            <h2>Наши тарифы</h2>
+            <p>Мы знаем, что каждое путешествие уникально.
+                Поэтому разработали несколько тарифов, чтобы вы могли выбрать самый комфортный для себя.
+                Независимо от выбранного тарифа, вас ждет незабываемое путешествие.
+            </p>
+            <table width="500">
+                <tr>
+                    <th width="200">Тарифы</th>
+                    <th width="300">Группа</th>
+                    <th width="300">Стоимость</th>
+                    <th width="300">Программа</th>
+                <tr>
+                    <td width="200">Эконом</td>
+                    <td width="300">До 15 человек</td>
+                    <td width="300">3000 руб.</td>
+                    <td width="300">Пешая прогулка по лесам Карелии</td>
+                </tr>
+                <tr>
+                    <td width="200">Комфорт</td>
+                    <td width="300">До 7 человек</td>
+                    <td width="300">5000 руб.</td>
+                    <td width="300">Пешая прогулка по лесам Карелии. Экскурсия по Ладожскому озеру</td>
+                </tr>
+                <tr>
+                    <td width="200">Премиум</td>
+                    <td width="300">До 4 человек</td>
+                    <td width="300">8000 руб.</td>
+                    <td width="300">Поездка по лесам Карелии с заездом в Сортовалу. Экскурсия по Ладожскому озеру</td>
+                </tr>
+                <tr>
+                    <td width="200">Бизнес</td>
+                    <td width="300">Персональный</td>
+                    <td width="300">20000 руб.</td>
+                    <td width="300">Индивидуальный план</td>
+                </tr>
+            </table>
+            <h3>Цены на дополнительные услуги:</h3>
+            <form>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="services" value="transfer" data-price="200">
+                        <label>Трансфер до начала экскурсии</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="services" value="disabled_transfer" data-price="200">
+                        <label>Трансфер для маломобильных</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="services" value="translator" data-price="300">
+                        <label>Переводчик с русского на английский</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="services" value="children" data-price="200">
+                        <label>Экскурсия с детьми</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="services" value="hb" data-price="500">
+                        <label>День рождения</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="services" value="sign_l_i" data-price="300">
+                        <label>Сурдопереводчик</label>
+                    </li>
+                </ul>
+            </form>
+            <p2 id="total-price">Сумма: 0 рублей</p2>
+                <script>
+                    const checkboxes = document.querySelectorAll('input[name="services"]');
+                    const totalPriceElement = document.getElementById('total-price');
+                
+                    checkboxes.forEach(checkbox => {
+                    checkbox.addEventListener('change', () => {
+                        let totalPrice = 0;
+                        checkboxes.forEach(checkbox => {
+                        if (checkbox.checked) {
+                            totalPrice += parseInt(checkbox.getAttribute('data-price'));
+                        }
+                        });
+                        totalPriceElement.textContent = `Сумма: ${totalPrice} рублей`;
+                    });
+                    });
+                </script>
+            <h3 >Отзывы клиентов</h3>
+            <blockquote>Если вы хотите не просто посмотреть на Карелию из окна автобуса, а почувствовать её душу — вам точно к этим ребятам!
+                Мы были в восторге от каждой детали. Нас не просто возили по точкам на карте, а буквально открывали нам этот удивительный край.
+                Гид с такой любовью и знанием рассказывала легенды, что древние скалы и озера будто оживали.
+            </blockquote>
+            <figure>
+                <img src="resources/hipsterskaa.jpg" alt="photos of people in the forest" width="795" height="502">
+                <figcaption>Андрей и Марина, Санкт-Петербург</figcaption>
+            </figure>
+            <blockquote>Всё было просто идеально: организация на высшем уровне, никаких непредвиденных ситуаций.
+                Но главное — это невероятная атмосфера! Гид — ходячая энциклопедия и настоящий фанат своего дела.
+                Он показал нам такую Карелию, какую вы в интернете не найдёте.
+                Спасибо за уникальные локации, тёплый приём и море позитива. Компания с душой!
+            </blockquote>
+            <figure>
+                <img src="resources/turistka.jpg" alt="photos of people in the forest 2" width="795" height="502">
+                <figcaption>Настя, Москва</figcaption>
+            </figure>
+            <blockquote>Я много читал о Карелии, но эта поездка превзошла все ожидания.
+                Команда гидов сумела показать не просто красоты, а саму суть севера — его первозданную, суровую мощь и богатейшую историю, которая чувствуется в каждом камне.
+                Мы пили чай из целебных трав и видели рассвет на озере, абсолютно одни.
+                Это путешествие перезагрузило и подарило ощущение настоящего приключения. Спасибо за ваш искренний подход и глубокие знания!
+            </blockquote>
+            <figure>
+                <img src="resources/zhensina.jpg" alt="photos of people in the forest 3" width="795" height="502">
+                <figcaption>Дима и Алина, Сочи</figcaption>
+            </figure>
+            <h2>Запись и консультация</h2>
+            <p>Для подробной информации заполните форму.
+                Наши менеджеры с вами свяжутся.</p>
+            <form>
+                <input type="text" placeholder="Имя"><br>
+                <input type="text" placeholder="Фамилия"><br>
+                <input type="email" placeholder="Email"><br>
+                <input type="number" placeholder="Номер телефона"><br>
+                <select name="tariff" id="tariff">
+                    <label for="tariff">Выбор тарифа</label>
+                    <option value="economy">Эконом</option>
+                    <option value="comfort">Комфорт</option>
+                    <option value="business">Премиум</option>
+                    <option value="business">Бизнес</option>
+                </select>
+                <br>
+                <button type="submit">Отправить</button>
+            </form>
+        </main>
+        <a href="https:/t.me/umvbz">Связь с автором</a>
+    </body>
+</html>
