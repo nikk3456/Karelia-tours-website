@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "anticva";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/resources/anticva.ttf") format("truetype");
+}
+
+.page{
+    background-color: rgb(32, 24, 24);
+}
+
+img{
+    width: 700px;
+}
+
+.page-body {
+    font-family: "anticva", serif;
+    font-size: 20px;
+    color: rgb(5, 83, 57);
+    margin: 0px;
+}
+
+.heading{
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/resources/medved.jpg');
+    background-size: cover;
+    background-position: 50% 70%;
+    padding: 15px;
+}
+
+.heading::before{
+    opacity: 0.5;
+}
+
+h1{
+    text-align: center;
+}
+
+h2, h3{
+    color: rgb(163, 216, 216);
+}
+
+address{
+    padding: 10px;
+    font-size: 15px;
+}
+
+.content{
+    display: flex;
+}
+
+.content-left{
+    width: 70%;
+}
+
+.content-right{
+    width: 30%;
+    background-color: rgb(170, 198, 224);
+    margin-top: 30px;
+}
+
+footer{
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.img-feedback{
+    height: 170px;
+    width: 170px;
+    object-fit: cover;
+}
+
+.img-another{
+    width: 700px;
+    object-fit: cover;
+}
+
+.img-another:hover{
+    filter: brightness(50%);
+}
