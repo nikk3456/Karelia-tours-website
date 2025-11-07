@@ -7,41 +7,92 @@
 
 .page{
     background-color: rgb(32, 24, 24);
+    font-size: 20px;
 }
 
 img{
     width: 700px;
+    border-radius: 30px;
 }
 
 .page-body {
-    font-family: "anticva", serif;
-    font-size: 20px;
-    color: rgb(5, 83, 57);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 255, 255);
     margin: 0px;
 }
 
 .heading{
-    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/resources/medved.jpg');
+    background: linear-gradient(rgba(141, 118, 118, 0.5), rgba(8, 8, 8, 0.6)), url('/resources/medved.jpg');
     background-size: cover;
     background-position: 50% 70%;
-    padding: 15px;
+    padding: 25px;
+    padding-left: 150px;
+    display: flex;
+    font-family: "anticva", serif;
+}
+
+.heading-h1{
+    text-align: left;
+    font-size: 60px;
+}
+
+.heading-logo{
+    border-radius: 900px;
+    width: 90px;
+    height: 90px;
+    margin-top: 10px;
+}
+
+.heading-quote{
+    display: flex;
+}
+
+.heading-block{
+    text-align: center;
+    margin: auto;
+    margin-left: 20px;
+    font-style: italic;
+    font-size: 17px;
+}
+
+.heading-flex{
+    display: flex;
+}
+
+.heading-p-div{
+    width: 500px;
+    line-height: 1.5;
+}
+
+.heading-p{
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
 }
 
 .heading::before{
     opacity: 0.5;
 }
 
-h1{
-    text-align: center;
-}
-
 h2, h3{
     color: rgb(163, 216, 216);
+    font-size: 60px;
+}
+
+td{
+    font-size: 16px;
 }
 
 address{
     padding: 10px;
-    font-size: 15px;
+    font-size: 14px;
+}
+
+.program{
+    display: flex;
+}
+
+.program-img{
+    margin-left: 0px;
 }
 
 .content{
@@ -49,13 +100,17 @@ address{
 }
 
 .content-left{
-    width: 70%;
+    width: 90%;
+    padding: 20px;
+    padding-left: 60px;
 }
 
 .content-right{
     width: 30%;
-    background-color: rgb(170, 198, 224);
+    background-color: rgb(85, 91, 97);
     margin-top: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 footer{
@@ -69,7 +124,12 @@ footer{
 .img-feedback{
     height: 170px;
     width: 170px;
+    border-radius: 900px;
     object-fit: cover;
+}
+
+.feedback{
+    display: flex;
 }
 
 .img-another{
@@ -79,4 +139,21 @@ footer{
 
 .img-another:hover{
     filter: brightness(50%);
+}
+
+.whom-img-group{
+    display: flex;
+}
+
+.whom-img{
+    width: 15em;
+    margin-right: 25px;
+}
+
+.img-another{
+    width: 12em;
+}
+
+.icon-telegram{
+    width: 30px;
 }
