@@ -8,20 +8,20 @@
     <body class="page-body">
         <header>
             <nav>
-                <ul>
-                    <li>
+                <ul class="nav-ul">
+                    <li class="nav-li">
                         <a href="#home">Главная</a>
                     </li>
-                    <li>
+                    <li class="nav-li">
                         <a href="#program">Программа</a>
                     </li>
-                    <li>
+                    <li class="nav-li">
                         <a href="#whom">Для кого</a>
                     </li>
-                    <li>
+                    <li class="nav-li">
                         <a href="#prices">Цены</a>
                     </li>
-                    <li>
+                    <li class="nav-li">
                         <a href="#contacts">Контакты</a>
                     </li>
                 </ul>
@@ -37,7 +37,7 @@
                     <p class="heading-p">Нас отличает оригинальность программ, безупречная организация и индивидуальное внимание к каждому.</p>      
                 </div>
                 <div class="heading-quote">
-                    <img class="heading-logo" src="/resources/logo.jpg">
+                    <img class="heading-logo" src="/resources/logo.jpg" alt="логотип компании">
                     <blockquote class="heading-block">Для тех, кто ищет не просто тур, а опыт.</blockquote>
                 </div>
             </div>
@@ -45,9 +45,9 @@
         <div class="content">
             <div class="content-left">
                 <main>
-                    <section>
+                    <section id="program">
                         <h3>Почему выбирают нас?</h3>
-                        <div class="program">
+                        <div class="program-div">
                             <figure class="program-img">
                                 <img src="resources/para.jpg" alt="Счастливая пара в туре" >
                                 <figcaption>Пятидневное погружение в природу Северного Приладожья</figcaption>
@@ -84,40 +84,40 @@
                             Поэтому разработали несколько тарифов, чтобы вы могли выбрать самый комфортный для себя.
                             Независимо от выбранного тарифа, вас ждет незабываемое путешествие.
                         </p>
-                        <table width="500">
+                        <table>
                             <tr>
-                                <th width="200">Тарифы</th>
-                                <th width="300">Группа</th>
-                                <th width="300">Стоимость</th>
-                                <th width="300">Программа</th>
+                                <th class="main-th">Тарифы</th>
+                                <th>Группа</th>
+                                <th>Стоимость</th>
+                                <th>Программа</th>
                             <tr>
-                                <td width="200">Эконом</td>
-                                <td width="300">До 15 человек</td>
-                                <td width="300">3000 руб.</td>
-                                <td width="300">Пешая прогулка по лесам Карелии</td>
+                                <td class="main-td">Эконом</td>
+                                <td>До 15 человек</td>
+                                <td>3000 руб.</td>
+                                <td>Пешая прогулка по лесам Карелии</td>
+                            </tr>
+                            <tr class="tr-another">
+                                <td class="main-td">Комфорт</td>
+                                <td>До 7 человек</td>
+                                <td>5000 руб.</td>
+                                <td>Пешая прогулка по лесам Карелии. Экскурсия по Ладожскому озеру</td>
                             </tr>
                             <tr>
-                                <td width="200">Комфорт</td>
-                                <td width="300">До 7 человек</td>
-                                <td width="300">5000 руб.</td>
-                                <td width="300">Пешая прогулка по лесам Карелии. Экскурсия по Ладожскому озеру</td>
+                                <td class="main-td">Премиум</td>
+                                <td>До 4 человек</td>
+                                <td>8000 руб.</td>
+                                <td>Поездка по лесам Карелии с заездом в Сортовалу. Экскурсия по Ладожскому озеру</td>
                             </tr>
-                            <tr>
-                                <td width="200">Премиум</td>
-                                <td width="300">До 4 человек</td>
-                                <td width="300">8000 руб.</td>
-                                <td width="300">Поездка по лесам Карелии с заездом в Сортовалу. Экскурсия по Ладожскому озеру</td>
-                            </tr>
-                            <tr>
-                                <td width="200">Бизнес</td>
-                                <td width="300">Персональный</td>
-                                <td width="300">20000 руб.</td>
-                                <td width="300">Индивидуальный план</td>
+                            <tr class="tr-another">
+                                <td class="main-td">Бизнес</td>
+                                <td>Персональный</td>
+                                <td>20000 руб.</td>
+                                <td>Индивидуальный план</td>
                             </tr>
                         </table>
                     </section>
                 </main>
-                <div>
+                <div id="additional-services">
                     <h3>Цены на дополнительные услуги:</h3>
                     <form>
                         <ul>
@@ -147,9 +147,9 @@
                             </li>
                         </ul>
                     </form>
-                    <p2 id="total-price">Сумма: 0 рублей</p2>
+                    <p id="total-price">Сумма: 0 рублей</p>
                 </div>
-                <h3>Отзывы клиентов</h3>
+                <h3 class="reviews">Отзывы клиентов</h3>
                 <figure class="feedback">
                     <img class="img-feedback" src="resources/hipsterskaa.jpg" alt="фото людей на отдыхе в лесу" >
                     <div class="text-feedback">
@@ -204,10 +204,16 @@
             <div class="content-right">
                 <aside>
                     <h3>Другие туры</h3>
-                    <img class="img-another" src="resources/poezd.jpg" alt="The train rides beautifully">
-                    <p>Ретро-поезд</p>
-                    <img class="img-another" src="resources/lodka.jpg" alt="The ship is sailing away">
-                    <p>Водный тур</p>
+                    <ul class="content-ul">
+                        <li>
+                            <img class="img-another" src="resources/poezd.jpg" alt="The train rides beautifully">
+                            <p>Ретро-поезд</p>
+                        </li>
+                        <li>
+                            <img class="img-another" src="resources/lodka.jpg" alt="The ship is sailing away">
+                            <p>Водный тур</p>
+                        </li>
+                    </ul>
                 </aside>
             </div>
         </div>
@@ -216,7 +222,7 @@
         <footer>
             2025 год, Авторские туры по Карелии
             <address>
-                <i><a href="https:/t.me/umvbz" id="contacts"><img class="icon-telegram" src="/resources/icon-telegram.png"></i>
+                <i><a href="https:/t.me/umvbz" id="contacts"><img class="icon-telegram" src="/resources/icon-telegram.png" alt="иконка телеграма"></i>
             </address>
         </footer>
 
