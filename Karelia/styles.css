@@ -61,6 +61,10 @@ a{
     text-decoration: none;
 }
 
+figcaption{
+    text-align: right;
+}
+
 p:not(.p-content-right){
     margin-bottom: 30px;
     overflow-wrap: break-word;
@@ -204,7 +208,7 @@ a:hover{
 }
 
 .tr-another{
-    background-color: rgb(182, 173, 168);
+    background-color: rgb(70, 65, 59);
     border-radius: 20px;
 }
 
@@ -287,10 +291,6 @@ a:hover{
     padding: 40px 200px;
     padding-right: 80px;
     max-width: 100%;
-}
-
-.page-section:last-child{
-    padding-top: 0;
 }
 
 .page-section-with-bg::before {
