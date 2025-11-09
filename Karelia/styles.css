@@ -7,7 +7,7 @@
 
 .page{
     background-color: rgb(32, 24, 24);
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .page-body {
@@ -17,13 +17,16 @@
     line-height: 1.4;
 }
 
-h2, h3{
-    color: rgb(163, 216, 216);
-    font-size: 60px;
+h2{
+    font-size: 46px;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
-td{
-    font-size: 16px;
+h3{
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 address{
@@ -32,22 +35,35 @@ address{
 }
 
 table{
-    width: 500px;
+    width: 100%;
     border-collapse: collapse;
+    border-spacing: 0 10px;
 }
 
 th, td{
     width: 300px;
+    padding: 10px 35px;
+    text-align: left;
+}
+
+td{
+    font-size: 20px;
 }
 
 img{
-    width: 700px;
     border-radius: 30px;
+    margin: 30px;
+    margin-top: 0px;
 }
 
 a{
     color: black;
     text-decoration: none;
+}
+
+p:not(.p-content-right){
+    margin-bottom: 30px;
+    overflow-wrap: break-word;
 }
 
 a:hover{
@@ -67,8 +83,10 @@ a:hover{
 .nav-li{
     display: inline-block;
     text-align: center;
-    width: 100px;
+    min-width: 85px;
     padding: 20px;
+    font-size: 22px;
+    font-weight: 400;
 }
 
 .nav-li:first-child{
@@ -82,12 +100,11 @@ a:hover{
 .heading{
     background: linear-gradient(rgba(141, 118, 118, 0.5), rgba(8, 8, 8, 0.6)), url('/resources/medved.jpg');
     background-size: cover;
-    background-position: 50% 70%;
+    background-position: center;
     padding: 25px;
     padding-left: 150px;
     display: flex;
     font-family: "anticva", serif;
-    line-height: 1.5;
 }
 
 .heading-h1{
@@ -137,38 +154,53 @@ a:hover{
 }
 
 .program-div{
-    display: flex;
+    display: grid;
+    grid-template-columns: 440px 1fr;
+    gap: 40px;
+    margin-top: 30px;
 }
 
-.program-img{
+.program-div > img{
     margin-left: 0px;
+    width: 100%;
+}
+
+.program-text{
+    display: block;
 }
 
 .content{
-    display: flex;
-}
-
-.content-left{
-    width: 90%;
-    padding: 20px;
-    padding-left: 60px;
-    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 360px;
 }
 
 .content-right{
-    width: 30%;
     background-color: rgb(85, 91, 97);
-    margin-top: 30px;
     text-align: center;
     color: rgb(255, 255, 255);
+    padding: 40px 20px;
+}
+
+.content-right .img-another{
+    max-width: 220px;
+    height: auto;
+    border-radius: 15px;
+    margin: 10px 0;
 }
 
 .content-ul{
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .content-right li:not(:last-child) {
     margin-bottom: 40px;
+}
+
+.tr-header{
+    background-color: rgb(85, 91, 97);
+    border-radius: 20px;
 }
 
 .tr-another{
@@ -176,12 +208,31 @@ a:hover{
     border-radius: 20px;
 }
 
-footer{
-    background-color: aliceblue;
-    color: black;
+.tr-another td:first-child, .tr-header th:first-child{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.tr-another td:last-child, .tr-header th:last-child{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.services-right {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+#total-price{
+    font-size: 25px;
+    background-color: rgb(85, 91, 97);
     text-align: center;
-    font-size: 18px;
-    padding: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    margin: auto 0 0 0;
+    padding: 10px;
 }
 
 .img-feedback{
@@ -203,22 +254,54 @@ footer{
     gap: 40px;
     padding: 20px 80px 20px 40px;
     border-radius: 20px;
+    background-color: rgb(70, 65, 59);
+    border-radius: 20px;
+    margin: 40px;
+    margin-left: 0;
+}
+
+.feedback-form{
+    padding: 20px 80px 20px 40px;
+    border-radius: 20px;
+    background-color: rgb(70, 65, 59);
+    border-radius: 20px;
+    margin: 0;
+    margin-right: 40px;
 }
 
 .img-another{
-    width: 700px;
+    border-radius: 30px;
     object-fit: cover;
 }
 
-.img-another:hover{
+.content-ul li:hover{
     filter: brightness(50%);
 }
 
-#whom, #additional-services{
+.p-content-right{
+    margin: 0;
+}
+
+.page-section {
+    position: relative;
+    padding: 40px 200px;
+    padding-right: 80px;
+    max-width: 100%;
+}
+
+.page-section:last-child{
+    padding-top: 0;
+}
+
+.page-section-with-bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
     background-color: rgb(70, 65, 59);
-    margin-left: -60px;
-    margin-right: -60px;
-    padding-left: 60px;
+    z-index: -1;
 }
 
 .whom-img-group{
@@ -226,8 +309,8 @@ footer{
 }
 
 .whom-img{
-    width: 15em;
-    margin-right: 25px;
+    width: 11em;
+    margin: 10px;
 }
 
 .img-another{
@@ -235,5 +318,25 @@ footer{
 }
 
 .icon-telegram{
-    width: 30px;
+    width: 40px;
+    margin: 0 20px;
+}
+
+footer{
+    background-color: rgb(85, 91, 97);
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+}
+
+address{
+    width: 50%;
+    font-size: 40px;
+    background-color: aliceblue;
+    border-radius: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: auto;
 }

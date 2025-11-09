@@ -45,16 +45,13 @@
         <div class="content">
             <div class="content-left">
                 <main>
-                    <section id="program">
-                        <h3>Почему выбирают нас?</h3>
+                    <section class="page-section" id="program">
+                        <h2>Почему выбирают нас?</h2>
+                        <p>Мы не заполняем программу достопримечательностями. Мы открываем для вас душу Севера.</p>
                         <div class="program-div">
-                            <figure class="program-img">
-                                <img src="resources/para.jpg" alt="Счастливая пара в туре" >
-                                <figcaption>Пятидневное погружение в природу Северного Приладожья</figcaption>
-                            </figure>
+                            <img src="resources/para.jpg" alt="Счастливая пара в туре" >
                             <div class="program-text">
-                                <p>Мы не заполняем программу достопримечательностями. Мы открываем для вас душу Севера.
-                                    За каждым нашим маршрутом стоит четкая цель:</p>
+                                <h3>За каждым нашим маршрутом стоит четкая цель:</h3>
                                 <ol>
                                     <li>Пробудить восторг от мощи нетронутой природы.</li>
                                     <li>Рассказать живую историю, которую можно почувствовать.</li>
@@ -64,8 +61,8 @@
                         </div>
                     </section>
         
-                    <section id="whom">
-                        <h3>Кому подойдет экскурсия?</h3>
+                    <section class="page-section page-section-with-bg" id="whom">
+                        <h2>Кому подойдет экскурсия?</h2>
                         <div class="whom-img-group">
                             <img class="whom-img" src="/resources/kid.jpg" alt="счастливый ребенок в зимнем туре">
                             <img class="whom-img" src="/resources/semya-zimoi.jpg" alt="семья в зимнем туре">
@@ -78,14 +75,14 @@
                             <li>Для индивидуальных путешественников</li>
                         </ul>
                     </section>
-                    <section id="prices">
+                    <section class="page-section" id="prices">
                         <h2>Наши тарифы</h2>
                         <p>Мы знаем, что каждое путешествие уникально.
                             Поэтому разработали несколько тарифов, чтобы вы могли выбрать самый комфортный для себя.
                             Независимо от выбранного тарифа, вас ждет незабываемое путешествие.
                         </p>
                         <table>
-                            <tr>
+                            <tr class="tr-header">
                                 <th class="main-th">Тарифы</th>
                                 <th>Группа</th>
                                 <th>Стоимость</th>
@@ -117,116 +114,124 @@
                         </table>
                     </section>
                 </main>
-                <div id="additional-services">
-                    <h3>Цены на дополнительные услуги:</h3>
-                    <form>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="services" value="transfer" data-price="200">
-                                <label>Трансфер до начала экскурсии</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="services" value="disabled_transfer" data-price="200">
-                                <label>Трансфер для маломобильных</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="services" value="translator" data-price="300">
-                                <label>Переводчик с русского на английский</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="services" value="children" data-price="200">
-                                <label>Экскурсия с детьми</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="services" value="hb" data-price="500">
-                                <label>День рождения</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="services" value="sign_l_i" data-price="300">
-                                <label>Сурдопереводчик</label>
-                            </li>
-                        </ul>
-                    </form>
-                    <p id="total-price">Сумма: 0 рублей</p>
+                <div class="page-section additional-services page-section-with-bg">
+                    <h2>Цены на дополнительные услуги:</h2>
+                    <p>При выборе дополнительных опций к экскурсиям вы получаете возможность настроить свой опыт путешествия по своему вкусу.
+                        В зависимости от ваших предпочтений и потребностей,
+                        вы можете выбрать опцию трансфера, питания или сопровождения.</p>
+                    <div class="services-right">
+                        <form>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="services" value="transfer" data-price="200">
+                                    <label>Трансфер до начала экскурсии</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="services" value="disabled_transfer" data-price="200">
+                                    <label>Трансфер для маломобильных</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="services" value="translator" data-price="300">
+                                    <label>Переводчик с русского на английский</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="services" value="children" data-price="200">
+                                    <label>Экскурсия с детьми</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="services" value="hb" data-price="500">
+                                    <label>День рождения</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="services" value="sign_l_i" data-price="300">
+                                    <label>Сурдопереводчик</label>
+                                </li>
+                            </ul>
+                        </form>
+                        <p id="total-price">Сумма: 0 рублей</p>
+                    </div>
                 </div>
-                <h3 class="reviews">Отзывы клиентов</h3>
-                <figure class="feedback">
-                    <img class="img-feedback" src="resources/hipsterskaa.jpg" alt="фото людей на отдыхе в лесу" >
-                    <div class="text-feedback">
-                        <blockquote>Если вы хотите не просто посмотреть на Карелию из окна автобуса, а почувствовать её душу — вам точно к этим ребятам!
-                            Мы были в восторге от каждой детали. Нас не просто возили по точкам на карте, а буквально открывали нам этот удивительный край.
-                            Гид с такой любовью и знанием рассказывала легенды, что древние скалы и озера будто оживали.
-                        </blockquote>
-                        <figcaption>Андрей и Марина, Санкт-Петербург</figcaption>
+                <div class="page-section div-reviews">
+                    <h2 class="reviews">Отзывы клиентов</h2>
+                    <figure class="feedback">
+                        <img class="img-feedback" src="resources/hipsterskaa.jpg" alt="фото людей на отдыхе в лесу" >
+                        <div class="text-feedback">
+                            <blockquote>Если вы хотите не просто посмотреть на Карелию из окна автобуса, а почувствовать её душу — вам точно к этим ребятам!
+                                Мы были в восторге от каждой детали. Нас не просто возили по точкам на карте, а буквально открывали нам этот удивительный край.
+                                Гид с такой любовью и знанием рассказывала легенды, что древние скалы и озера будто оживали.
+                            </blockquote>
+                            <figcaption>Андрей и Марина, Санкт-Петербург</figcaption>
+                        </div>
+                    </figure>
+                    <figure class="feedback">
+                        <img class="img-feedback" src="resources/turistka.jpg" alt="девушка на фоне карельских видов" >
+                        <div class="text-feedback">
+                            <blockquote>Всё было просто идеально: организация на высшем уровне, никаких непредвиденных ситуаций.
+                                Но главное — это невероятная атмосфера! Гид — ходячая энциклопедия и настоящий фанат своего дела.
+                                Он показал нам такую Карелию, какую вы в интернете не найдёте.
+                                Спасибо за уникальные локации, тёплый приём и море позитива. Компания с душой!
+                            </blockquote>
+                            <figcaption>Настя, Москва</figcaption>
+                        </div>
+                    </figure>
+                    <figure class="feedback">
+                        <img class="img-feedback" src="resources/zhensina.jpg" alt="девушка позирует на скалах" >
+                        <div class="text-feedback">
+                            <blockquote>Я много читал о Карелии, но эта поездка превзошла все ожидания.
+                                Команда гидов сумела показать не просто красоты, а саму суть севера — его первозданную, суровую мощь и богатейшую историю, которая чувствуется в каждом камне.
+                                Мы пили чай из целебных трав и видели рассвет на озере, абсолютно одни.
+                                Это путешествие перезагрузило и подарило ощущение настоящего приключения. Спасибо за ваш искренний подход и глубокие знания!
+                            </blockquote>
+                            <figcaption>Дима и Алина, Сочи</figcaption>
+                        </div>
+                    </figure>
+                </div>
+                <div class="page-section div-feedback-form">
+                    <div class="feedback-form">
+                        <p>Для подробной информации заполните форму.<br>
+                            Наши менеджеры с вами свяжутся.</p>
+                        <form>
+                            <input type="text" placeholder="Имя"><br>
+                            <input type="text" placeholder="Фамилия"><br>
+                            <input type="email" placeholder="Email"><br>
+                            <input type="number" placeholder="Номер телефона"><br>
+                            <select name="tariff" id="tariff">
+                                <label for="tariff">Выбор тарифа</label>
+                                <option value="economy">Эконом</option>
+                                <option value="comfort">Комфорт</option>
+                                <option value="business">Премиум</option>
+                                <option value="business">Бизнес</option>
+                            </select>
+                            <br>
+                            <button type="submit">Отправить</button>
+                        </form>
                     </div>
-                </figure>
-                <figure class="feedback">
-                    <img class="img-feedback" src="resources/turistka.jpg" alt="девушка на фоне карельских видов" >
-                    <div class="text-feedback">
-                        <blockquote>Всё было просто идеально: организация на высшем уровне, никаких непредвиденных ситуаций.
-                            Но главное — это невероятная атмосфера! Гид — ходячая энциклопедия и настоящий фанат своего дела.
-                            Он показал нам такую Карелию, какую вы в интернете не найдёте.
-                            Спасибо за уникальные локации, тёплый приём и море позитива. Компания с душой!
-                        </blockquote>
-                        <figcaption>Настя, Москва</figcaption>
-                    </div>
-                </figure>
-                <figure class="feedback">
-                    <img class="img-feedback" src="resources/zhensina.jpg" alt="девушка позирует на скалах" >
-                    <div class="text-feedback">
-                        <blockquote>Я много читал о Карелии, но эта поездка превзошла все ожидания.
-                            Команда гидов сумела показать не просто красоты, а саму суть севера — его первозданную, суровую мощь и богатейшую историю, которая чувствуется в каждом камне.
-                            Мы пили чай из целебных трав и видели рассвет на озере, абсолютно одни.
-                            Это путешествие перезагрузило и подарило ощущение настоящего приключения. Спасибо за ваш искренний подход и глубокие знания!
-                        </blockquote>
-                        <figcaption>Дима и Алина, Сочи</figcaption>
-                    </div>
-                </figure>
-                <h2>Запись и консультация</h2>
-                <p>Для подробной информации заполните форму.
-                    Наши менеджеры с вами свяжутся.</p>
-                <form>
-                    <input type="text" placeholder="Имя"><br>
-                    <input type="text" placeholder="Фамилия"><br>
-                    <input type="email" placeholder="Email"><br>
-                    <input type="number" placeholder="Номер телефона"><br>
-                    <select name="tariff" id="tariff">
-                        <label for="tariff">Выбор тарифа</label>
-                        <option value="economy">Эконом</option>
-                        <option value="comfort">Комфорт</option>
-                        <option value="business">Премиум</option>
-                        <option value="business">Бизнес</option>
-                    </select>
-                    <br>
-                    <button type="submit">Отправить</button>
-                </form>
+                </div>
             </div>
-            <div class="content-right">
-                <aside>
-                    <h3>Другие туры</h3>
-                    <ul class="content-ul">
-                        <li>
-                            <img class="img-another" src="resources/poezd.jpg" alt="The train rides beautifully">
-                            <p>Ретро-поезд</p>
-                        </li>
-                        <li>
-                            <img class="img-another" src="resources/lodka.jpg" alt="The ship is sailing away">
-                            <p>Водный тур</p>
-                        </li>
-                    </ul>
-                </aside>
-            </div>
+            <aside class="content-right">
+                <h3>Другие туры</h3>
+                <ul class="content-ul">
+                    <li>
+                        <img class="img-another" src="resources/poezd.jpg" alt="The train rides beautifully">
+                        <p class="p-content-right">Ретро-поезд</p>
+                    </li>
+                    <li>
+                        <img class="img-another" src="resources/lodka.jpg" alt="The ship is sailing away">
+                        <p class="p-content-right">Водный тур</p>
+                    </li>
+                </ul>
+            </aside>
         </div>
         
-        
         <footer>
-            2025 год, Авторские туры по Карелии
+            <p>
+                2025 год, Авторские туры по Карелии
+            </p>
             <address>
-                <i><a href="https:/t.me/umvbz" id="contacts"><img class="icon-telegram" src="/resources/icon-telegram.png" alt="иконка телеграма"></i>
+                <i><a href="https:/t.me/umvbz" id="contacts" target="_blank">Свяжитесь с автором</i>
+                <img class="icon-telegram" src="/resources/icon-telegram.png" alt="иконка телеграма">
             </address>
         </footer>
-
-
 
         <script>
             const checkboxes = document.querySelectorAll('input[name="services"]');
